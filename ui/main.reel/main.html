@@ -17,6 +17,9 @@
             "prototype": "montage/core/event/action-event-listener",
             "properties": {
                 "action": "addContent",
+                "contenteditable": "true",
+                "dir": "ltr",
+                "draggable": "true",
                 "handler": {"@": "rangeController"}
             },
             "_dev": {
@@ -35,7 +38,7 @@
             },
             "listeners": [
                 {
-                    "type": "click",
+                    "type": "action",
                     "useCapture": true,
                     "listener": {"@": "actionEventListener"}
                 }
