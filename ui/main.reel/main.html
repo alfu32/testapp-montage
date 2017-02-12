@@ -49,15 +49,21 @@
             "properties": {
                 "element": {"#": "list"},
                 "content": [
-                    ""
+                    "@rangeController"
                 ],
+                "contenteditable": "true",
+                "dir": "ltr",
+                "draggable": "true",
+                "isSelectionEnabled": false
+            }
+        },
+        "rangeController": {
+            "prototype": "montage/core/range-controller",
+            "properties": {
                 "contenteditable": "true",
                 "dir": "ltr",
                 "draggable": "true"
             }
-        },
-        "rangeController": {
-            "prototype": "montage/core/range-controller"
         },
         "title": {
             "prototype": "digit/ui/title.reel",
